@@ -1,0 +1,16 @@
+name: Budowanie obrazu Docker
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Pobierz kod z repozytorium
+      uses: actions/checkout@v3
+
+    - name: Zbuduj obraz Docker
+      run: docker build -t moj-pierwszy-obraz .
