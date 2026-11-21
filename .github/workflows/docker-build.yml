@@ -1,5 +1,5 @@
 name: Budowanie, skanowanie i push obrazu
-
+#ok
 on:
   push:
     branches: [ "main" ]
